@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  max-width: 88%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.header {
+  overflow: hidden;
+  background-color: rgb(14, 13, 13);
+  color: aliceblue;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  word-spacing: 0.5px;
+}
+
+.header a {
+  color: aliceblue;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .container ul {
+  display: flex;
+}
+
+.header .container ul li {
+  margin-right: 25px;
+}
+
+.header i {
+  font-size: 12px;
+  margin-right: 2px;
+  color: rgb(245, 182, 46);
+}
+
+.navbar {
+  background-color: aliceblue;
+}
+
+.navbar .container {
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar h1 {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.navbar .container ul {
+  display: flex;
+}
+
+.navbar .container ul li {
+  margin-right: 15px;
+}
+
+.navbar .nav a {
+  display: inline-block;
+  margin-right: 25px;
+  font-weight: 700;
+}
+
+.navbar .cart-btn span {
+  font-size: 12px;
+  padding-top: 2px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  color: white;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+.navbar a:hover {
+  color: rgb(255, 157, 11);
+}
+
+.main-section {
+  overflow: hidden;
+  color: aliceblue;
+  line-height: 1.2;
+}
+
+.main-section img {
+  width: 100%;
+}
+
+.main-section .para-1 h1 {
+  font-size: 70px;
+}
+
+.main-section .para-1 p {
+  line-height: 1.7;
+  font-size: 27px;
+}
+.main-section .container {
+  padding: 90px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-img {
+  max-width: 30%;
+}
+
+.main-section {
+  background-image: url(images/main-bg.jpg);
+  background-size: cover;
+}
+
+.banner {
+  background-color: black;
+  color: whitesmoke;
+}
+
+.banner .container {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.banner p {
+  font-size: 14px;
+}
+
+.banner .container .banner-item {
+  padding: 15px;
+}
+
+.categories {
+  /* background-color: aliceblue; */
+  /* overflow-x: scroll; */
+  text-align: center;
+}
+
+/* .categories h1 {
+  letter-spacing: 3px;
+  padding: 30px;
+  /* padding-top: 30px; */
+/* border: 1px solid red; */
+/* padding-bottom: 15px;
+  border-bottom: 3px solid rgb(14, 13, 13);
+  margin: 0 auto;
+  width: 10%;
+  margin-bottom: 30px; */
+/* } */
+
+.categories img {
+  width: 100%;
+}
+
+.categories .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding-top: 50px;
+}
+
+.book-slider {
+  text-align: center;
+}
+
+.book-slider .container {
+}
+
+.book-slider .slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.book-slider img {
+  width: 120px;
+  height: 160px;
+  margin: 0 auto;
+  border: 1px solid grey;
+}
+
+.book-slider .book-div {
+  border: 1px solid rgb(235, 233, 233);
+  padding: 30px;
+  line-height: 1.5;
+  text-align: left;
+  margin: 0 6px;
+}
+
+.book-slider .book-div h4 {
+  margin-top: 10px;
+}
+
+.book-slider p {
+  font-size: 13px;
+  color: grey;
+  text-decoration: line-through;
+}
+
+.book-slider .price {
+  color: red;
+  font-weight: 800;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.book-slider .container {
+  margin: 30px auto;
+}
+
+.book-slider h2 {
+  margin-bottom: 20px;
+}
