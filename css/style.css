@@ -191,64 +191,7 @@ ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  padding-top: 50px;
-}
-
-.book-slider {
-  text-align: center;
-}
-
-.book-slider .container {
-  /* overflow-x: hidden; */
-  /* display: grid;
-  grid-template-columns: minmax(300px); */
-}
-
-.book-slider .slider {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: nowrap;
-}
-
-.book-slider img {
-  width: 100%;
-  height: 220px;
-  margin: 0 auto;
-  border: 1px solid grey;
-}
-
-.book-slider .book-div {
-  border: 1px solid rgb(235, 233, 233);
-  padding: 30px;
-  line-height: 1.5;
-  text-align: left;
-  margin: 0 6px;
-}
-
-.book-slider .book-div h4 {
-  margin-top: 10px;
-}
-
-.book-slider p {
-  font-size: 13px;
-  color: grey;
-  text-decoration: line-through;
-}
-
-.book-slider .price {
-  color: red;
-  font-weight: 800;
-  font-size: 16px;
-  text-decoration: none;
-}
-
-.book-slider .container {
-  margin: 30px auto;
-}
-
-.book-slider h2 {
-  margin-bottom: 20px;
+  padding: 5px 0;
 }
 
 .blogs-section {
@@ -366,4 +309,69 @@ ul {
 .footer span a {
   color: rgb(75, 75, 226);
   text-decoration: underline;
+}
+
+.section-slider h2 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.section-slider .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 50px; */
+  max-width: 90%;
+  margin: 25px auto;
+}
+
+.section-slider .slide-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid grey;
+}
+
+.section-slider .item-img-sec {
+  width: 70%;
+  margin: 20px auto;
+}
+
+.section-slider .item-img-sec img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border: 1px solid grey;
+}
+
+.section-slider .item-details {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.section-slider .title {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.title a {
+  color: blue;
+  font-family: 600;
+}
+
+.title span {
+  /* padding: 10px; */
+  padding: 4px 0;
+  font-size: 14px;
+  color: rgb(59, 57, 57);
+}
+
+.section-slider .item-price {
+  color: red;
 }
