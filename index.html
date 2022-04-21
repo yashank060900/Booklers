@@ -1,305 +1,851 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Booklers</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/lightslider.css" />
-    <link rel="stylesheet" href="css/resposive.css" />
-    <script src="js/jquery.js"></script>
-    <script src="js/lightslider.js"></script>
-  </head>
-  <body>
-    <header class="header">
-      <div class="container">
-        <ul class="head-left">
-          <li>
-            Free Delivery Above <i class="fa fa-inr" aria-hidden="true"></i>399
-          </li>
-          <li><i class="fa fa-mobile"></i> +91-8989898989</li>
-        </ul>
-        <ul class="head-right">
-          <li>
-            <a href=""><i class="fa fa-search" aria-hidden="true"></i>Search</a>
-          </li>
-          <li>
-            <i class="fa fa-heart-o"></i>
-            Wishlist
-          </li>
-          <li>
-            <i class="fa fa-user"></i>
-            My Account
-          </li>
-        </ul>
-      </div>
-    </header>
 
-    <nav class="navbar">
-      <div class="container">
-        <a href="#" class="sidebar-opener"
-          ><img src="https://img.icons8.com/ios-filled/30/000000/outdent.png"
-        /></a>
-        <div class="logo"><h1>Booklers</h1></div>
-        <div class="nav">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Booklers</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/lightslider.css" />
+  <link rel="stylesheet" href="css/resposive.css" />
+  <script src="js/jquery.js"></script>
+  <script src="js/lightslider.js"></script>
+</head>
+
+<body>
+
+  <!-- header.php  -->
+  <header class="header">
+    <div class="container">
+      <ul class="head-left">
+        <li>
+          Free Delivery Above <i class="fa fa-inr" aria-hidden="true"></i>399
+        </li>
+        <li><i class="fa fa-mobile"></i> +91-8989898989</li>
+      </ul>
+      <ul class="head-right">
+        <li>
+          <a href=""><i class="fa fa-search" aria-hidden="true"></i>Search</a>
+        </li>
+        <li>
+          <i class="fa fa-heart-o"></i>
+          Wishlist
+        </li>
+        <li>
+          <a href="#popup-myaccount"><i class="fa fa-user"></i> My Account</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <!-- header.php end  -->
+
+  <!-- main-section.php  -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="sidebar-opener"><img src="https://img.icons8.com/ios-filled/30/000000/outdent.png" /></a>
+      <div class="logo">
+        <h1>Booklers</h1>
+      </div>
+      <div class="nav">
+        <a href="">Home</a>
+        <a href="">Categories</a>
+        <a href="">Blogs</a>
+        <a href="">Sell Books</a>
+        <a href="">Support</a>
+      </div>
+      <div class="cart-btn" id="popupOpenBtn">
+        <span>0</span>
+        <a href="#cart-popup">
+          <img src="https://img.icons8.com/ios/50/000000/shopping-bag--v1.png" alt="" srcset="" />
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="side-menu">
+    <div class="side-menu-in">
+      <div class="logo-sm">
+        <h1>Booklers</h1>
+        <div class="nav-menu">
           <a href="">Home</a>
           <a href="">Categories</a>
           <a href="">Blogs</a>
           <a href="">Sell Books</a>
           <a href="">Support</a>
         </div>
-        <div class="cart-btn">
-          <span>0</span>
-          <img
-            src="https://img.icons8.com/ios/50/000000/shopping-bag--v1.png"
-            alt=""
-            srcset=""
-          />
+      </div>
+      <a class="close-btn">
+        <img src="https://img.icons8.com/ios-filled/40/ffffff/delete-sign--v1.png" />
+      </a>
+    </div>
+  </div>
+
+  <section class="main-section">
+    <div class="container">
+      <div class="para-1">
+        <h1>Booklers - India's Biggest Online Book Store.</h1>
+        <p>Buy - Sell - Rent.</p>
+        <p>E-books and notes are also available.</p>
+      </div>
+      <div class="main-img">
+        <img src="images/booklers-main.jpg" alt="" srcset="" />
+      </div>
+    </div>
+  </section>
+
+  <div class="banner">
+    <div class="container">
+      <div class="banner-item">
+        <img src="https://img.icons8.com/ios/50/F8C336/truck.png" />
+        <h3>Free Shipping</h3>
+        <p>When you spend ₹399</p>
+      </div>
+      <div class="banner-item">
+        <img src="https://img.icons8.com/ios/50/F8C336/discount--v1.png" />
+        <h3>Exclusive Deals</h3>
+        <p>On your next read</p>
+      </div>
+      <div class="banner-item">
+        <img src="https://img.icons8.com/ios/50/F8C336/happy--v1.png" />
+        <h3>100% Satisfaction</h3>
+        <p>We care for you</p>
+      </div>
+      <div class="banner-item">
+        <img src="https://img.icons8.com/ios/50/F8C336/lock--v1.png" />
+        <h3>Secure Checkout</h3>
+        <p>For your privacy</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- main-section.php ends  -->
+
+
+  <div class="categories">
+    <div class="container">
+      <div class="coloumn">
+        <img src="images/category-img/cat-img1.jpg" alt="" srcset="" />
+      </div>
+      <div class="coloumn">
+        <img src="images/category-img/cat-img1.jpg" alt="" srcset="" />
+      </div>
+      <div class="coloumn">
+        <img src="images/category-img/cat-img1.jpg" alt="" srcset="" />
+      </div>
+      <div class="coloumn">
+        <img src="images/category-img/cat-img1.jpg" alt="" srcset="" />
+      </div>
+    </div>
+  </div>
+
+  <section class="section-slider">
+    <h2>New Arrivals on Our Bookshelf</h2>
+    <div class="container">
+      <ul class="responsive">
+        <li>
+          <div class="slide-item">
+            <div class="item-img-sec">
+              <img src="./images/books/book.jpg" alt="" srcset="" />
+            </div>
+            <div class="item-details">
+              <div class="title">
+                <a href="">Title Book Name</a>
+                <span>Author name</span>
+              </div>
+
+              <h4 class="item-price">$ 124</h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="slide-item">
+            <div class="item-img-sec">
+              <img src="./images/books/book.jpg" alt="" srcset="" />
+            </div>
+            <div class="item-details">
+              <div class="title">
+                <a href="">Title Book Name</a>
+                <span>Author name</span>
+              </div>
+
+              <h4 class="item-price">$ 124</h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="slide-item">
+            <div class="item-img-sec">
+              <img src="./images/books/book.jpg" alt="" srcset="" />
+            </div>
+            <div class="item-details">
+              <div class="title">
+                <a href="">Title Book Name</a>
+                <span>Author name</span>
+              </div>
+
+              <h4 class="item-price">$ 124</h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="slide-item">
+            <div class="item-img-sec">
+              <img src="./images/books/book.jpg" alt="" srcset="" />
+            </div>
+            <div class="item-details">
+              <div class="title">
+                <a href="">Title Book Name</a>
+                <span>Author name</span>
+              </div>
+
+              <h4 class="item-price">$ 124</h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="slide-item">
+            <div class="item-img-sec">
+              <img src="./images/books/book.jpg" alt="" srcset="" />
+            </div>
+            <div class="item-details">
+              <div class="title">
+                <a href="">Title Book Name</a>
+                <span>Author name</span>
+              </div>
+
+              <h4 class="item-price">$ 124</h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="slide-item">
+            <div class="item-img-sec">
+              <img src="./images/books/book.jpg" alt="" srcset="" />
+            </div>
+            <div class="item-details">
+              <div class="title">
+                <a href="">Title Book Name</a>
+                <span>Author name</span>
+              </div>
+
+              <h4 class="item-price">$ 124</h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="slide-item">
+            <div class="item-img-sec">
+              <img src="./images/books/book.jpg" alt="" srcset="" />
+            </div>
+            <div class="item-details">
+              <div class="title">
+                <a href="">Title Book Name</a>
+                <span>Author name</span>
+              </div>
+
+              <h4 class="item-price">$ 124</h4>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="slide-item">
+            <div class="item-img-sec">
+              <img src="./images/books/book.jpg" alt="" srcset="" />
+            </div>
+            <div class="item-details">
+              <div class="title">
+                <a href="">Title Book Name</a>
+                <span>Author name</span>
+              </div>
+
+              <h4 class="item-price">$ 124</h4>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="slide-item">
+            <div class="item-img-sec">
+              <img src="./images/books/book.jpg" alt="" srcset="" />
+            </div>
+            <div class="item-details">
+              <div class="title">
+                <a href="">Title Book Name</a>
+                <span>Author name</span>
+              </div>
+
+              <h4 class="item-price">$ 124</h4>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="categories">
+    <div class="container">
+      <div class="coloumn">
+        <img src="images/category-img/cat-img1.jpg" alt="" srcset="" />
+      </div>
+      <div class="coloumn">
+        <img src="images/category-img/cat-img1.jpg" alt="" srcset="" />
+      </div>
+      <div class="coloumn">
+        <img src="images/category-img/cat-img1.jpg" alt="" srcset="" />
+      </div>
+      <div class="coloumn">
+        <img src="images/category-img/cat-img1.jpg" alt="" srcset="" />
+      </div>
+    </div>
+  </div>
+
+  <section class="section-slider">
+    <h2>New Arrivals on Our Bookshelf</h2>
+    <div class="container">
+      <ul class="responsive">
+        <li>
+          <div class="slide-item">
+            <div class="item-img-sec">
+              <img src="./images/books/book.jpg" alt="" srcset="" />
+            </div>
+            <div class="item-details">
+              <div class="title">
+                <a href="">Title Book Name</a>
+                <span>Author name</span>
+              </div>
+
+              <h4 class="item-price">$ 124</h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="slide-item">
+            <div class="item-img-sec">
+              <img src="./images/books/book.jpg" alt="" srcset="" />
+            </div>
+            <div class="item-details">
+              <div class="title">
+                <a href="">Title Book Name</a>
+                <span>Author name</span>
+              </div>
+
+              <h4 class="item-price">$ 124</h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="slide-item">
+            <div class="item-img-sec">
+              <img src="./images/books/book.jpg" alt="" srcset="" />
+            </div>
+            <div class="item-details">
+              <div class="title">
+                <a href="">Title Book Name</a>
+                <span>Author name</span>
+              </div>
+
+              <h4 class="item-price">$ 124</h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="slide-item">
+            <div class="item-img-sec">
+              <img src="./images/books/book.jpg" alt="" srcset="" />
+            </div>
+            <div class="item-details">
+              <div class="title">
+                <a href="">Title Book Name</a>
+                <span>Author name</span>
+              </div>
+
+              <h4 class="item-price">$ 124</h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="slide-item">
+            <div class="item-img-sec">
+              <img src="./images/books/book.jpg" alt="" srcset="" />
+            </div>
+            <div class="item-details">
+              <div class="title">
+                <a href="">Title Book Name</a>
+                <span>Author name</span>
+              </div>
+
+              <h4 class="item-price">$ 124</h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="slide-item">
+            <div class="item-img-sec">
+              <img src="./images/books/book.jpg" alt="" srcset="" />
+            </div>
+            <div class="item-details">
+              <div class="title">
+                <a href="">Title Book Name</a>
+                <span>Author name</span>
+              </div>
+
+              <h4 class="item-price">$ 124</h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="slide-item">
+            <div class="item-img-sec">
+              <img src="./images/books/book.jpg" alt="" srcset="" />
+            </div>
+            <div class="item-details">
+              <div class="title">
+                <a href="">Title Book Name</a>
+                <span>Author name</span>
+              </div>
+
+              <h4 class="item-price">$ 124</h4>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="slide-item">
+            <div class="item-img-sec">
+              <img src="./images/books/book.jpg" alt="" srcset="" />
+            </div>
+            <div class="item-details">
+              <div class="title">
+                <a href="">Title Book Name</a>
+                <span>Author name</span>
+              </div>
+
+              <h4 class="item-price">$ 124</h4>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="slide-item">
+            <div class="item-img-sec">
+              <img src="./images/books/book.jpg" alt="" srcset="" />
+            </div>
+            <div class="item-details">
+              <div class="title">
+                <a href="">Title Book Name</a>
+                <span>Author name</span>
+              </div>
+
+              <h4 class="item-price">$ 124</h4>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="categories">
+    <div class="container">
+      <div class="coloumn">
+        <img src="images/category-img/cat-img1.jpg" alt="" srcset="" />
+      </div>
+      <div class="coloumn">
+        <img src="images/category-img/cat-img1.jpg" alt="" srcset="" />
+      </div>
+      <div class="coloumn">
+        <img src="images/category-img/cat-img1.jpg" alt="" srcset="" />
+      </div>
+      <div class="coloumn">
+        <img src="images/category-img/cat-img1.jpg" alt="" srcset="" />
+      </div>
+    </div>
+  </div>
+
+  <section class="section-slider">
+    <h2>New Arrivals on Our Bookshelf</h2>
+    <div class="container">
+      <ul class="responsive">
+        <li>
+          <div class="slide-item">
+            <div class="item-img-sec">
+              <img src="./images/books/book.jpg" alt="" srcset="" />
+            </div>
+            <div class="item-details">
+              <div class="title">
+                <a href="">Title Book Name</a>
+                <span>Author name</span>
+              </div>
+
+              <h4 class="item-price">$ 124</h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="slide-item">
+            <div class="item-img-sec">
+              <img src="./images/books/book.jpg" alt="" srcset="" />
+            </div>
+            <div class="item-details">
+              <div class="title">
+                <a href="">Title Book Name</a>
+                <span>Author name</span>
+              </div>
+
+              <h4 class="item-price">$ 124</h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="slide-item">
+            <div class="item-img-sec">
+              <img src="./images/books/book.jpg" alt="" srcset="" />
+            </div>
+            <div class="item-details">
+              <div class="title">
+                <a href="">Title Book Name</a>
+                <span>Author name</span>
+              </div>
+
+              <h4 class="item-price">$ 124</h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="slide-item">
+            <div class="item-img-sec">
+              <img src="./images/books/book.jpg" alt="" srcset="" />
+            </div>
+            <div class="item-details">
+              <div class="title">
+                <a href="">Title Book Name</a>
+                <span>Author name</span>
+              </div>
+
+              <h4 class="item-price">$ 124</h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="slide-item">
+            <div class="item-img-sec">
+              <img src="./images/books/book.jpg" alt="" srcset="" />
+            </div>
+            <div class="item-details">
+              <div class="title">
+                <a href="">Title Book Name</a>
+                <span>Author name</span>
+              </div>
+
+              <h4 class="item-price">$ 124</h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="slide-item">
+            <div class="item-img-sec">
+              <img src="./images/books/book.jpg" alt="" srcset="" />
+            </div>
+            <div class="item-details">
+              <div class="title">
+                <a href="">Title Book Name</a>
+                <span>Author name</span>
+              </div>
+
+              <h4 class="item-price">$ 124</h4>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="slide-item">
+            <div class="item-img-sec">
+              <img src="./images/books/book.jpg" alt="" srcset="" />
+            </div>
+            <div class="item-details">
+              <div class="title">
+                <a href="">Title Book Name</a>
+                <span>Author name</span>
+              </div>
+
+              <h4 class="item-price">$ 124</h4>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="slide-item">
+            <div class="item-img-sec">
+              <img src="./images/books/book.jpg" alt="" srcset="" />
+            </div>
+            <div class="item-details">
+              <div class="title">
+                <a href="">Title Book Name</a>
+                <span>Author name</span>
+              </div>
+
+              <h4 class="item-price">$ 124</h4>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="slide-item">
+            <div class="item-img-sec">
+              <img src="./images/books/book.jpg" alt="" srcset="" />
+            </div>
+            <div class="item-details">
+              <div class="title">
+                <a href="">Title Book Name</a>
+                <span>Author name</span>
+              </div>
+
+              <h4 class="item-price">$ 124</h4>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="blogs-section">
+    <h2>Bookish Santa Blogs<h2>
+        <div class="container">
+          <div class="blogs-link">
+            <div class="blog-link-header">
+              <h4>Learn Web Development</h4>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure esse
+              quasi eaque aspernatur placeat voluptate similique vel quidem ex
+              quia.
+            </p>
+            <p>20-20-20 20:20:20</p>
+            <a href=""> Read More >></a>
+          </div>
+
+          <div class="blogs-link">
+            <div class="blog-link-header">
+              <h4>Learn Web Development</h4>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure esse
+              quasi eaque aspernatur placeat voluptate similique vel quidem ex
+              quia.
+            </p>
+            <p>20-20-20 20:20:20</p>
+            <a href=""> Read More >></a>
+          </div>
+
+          <div class="blogs-link">
+            <div class="blog-link-header">
+              <h4>Learn Web Development
+              </h4>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure esse
+              quasi eaque aspernatur placeat voluptate similique vel quidem ex
+              quia.
+            </p>
+            <p>20-20-20 20:20:20</p>
+            <a href=""> Read More >></a>
+          </div>
+        </div>
+
+        <a href="">Read more Articles and Blogs>></a>
+  </section>
+
+  <div class="overlay" id="cart-popup">
+    <div class="popup">
+      <div class="popup-top">
+        <h2>My Cart</h2>
+        <a href class="close">&times;</a>
+      </div>
+      <div class="cart-item">
+        <img src="./images/books/book.jpg" alt="">
+        <div class="item-det">
+          <div class="item-det-in">
+            <h4>name name name</h4>
+            <p>Details</p>
+            <p>Details</p>
+          </div>
+          <h4>Price</h4>
         </div>
       </div>
-    </nav>
-
-    <section class="main-section">
-      <div class="container">
-        <div class="para-1">
-          <h1>Booklers - India's Biggest Online Book Store.</h1>
-          <p>Buy - Sell - Rent.</p>
-          <p>E-books and notes are also available.</p>
-        </div>
-        <div class="main-img">
-          <img src="images/booklers-main.jpg" alt="" srcset="" />
+      <div class="cart-item">
+        <img src="./images/books/book.jpg" alt="">
+        <div class="item-det">
+          <div class="item-det-in">
+            <h4>name name name</h4>
+            <p>Details</p>
+            <p>Details</p>
+          </div>
+          <h4>Price</h4>
         </div>
       </div>
-    </section>
+      <div class="cart-item">
+        <img src="./images/books/book.jpg" alt="">
+        <div class="item-det">
+          <div class="item-det-in">
+            <h4>name name name</h4>
+            <p>Details</p>
+            <p>Details</p>
+          </div>
+          <h4>Price</h4>
+        </div>
+      </div>
 
-    <div class="banner">
-      <div class="container">
-        <div class="banner-item">
-          <img src="https://img.icons8.com/ios/50/F8C336/truck.png" />
-          <h3>Free Shipping</h3>
-          <p>When you spend ₹399</p>
+      <div class="total-amt">
+        <h2>Total</h2>
+        <p>6545</p>
+      </div>
+
+      <div class="cart-btns op-btn">
+        <button>Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="popup-myaccount" class="overlay">
+    <div class="popup">
+      <!-- <div class="pop-head">
+        <div class="user-img-name">
+          <img src="./images/booklers-main.jpg" alt="">
+          <div class="user-det">
+            <h4>name name</h4>
+            <span>email@gmail.com</span>
+          </div>
         </div>
-        <div class="banner-item">
-          <img src="https://img.icons8.com/ios/50/F8C336/discount--v1.png" />
-          <h3>Exclusive Deals</h3>
-          <p>On your next read</p>
-        </div>
-        <div class="banner-item">
-          <img src="https://img.icons8.com/ios/50/F8C336/happy--v1.png" />
-          <h3>100% Satisfaction</h3>
-          <p>We care for you</p>
-        </div>
-        <div class="banner-item">
-          <img src="https://img.icons8.com/ios/50/F8C336/lock--v1.png" />
-          <h3>Secure Checkout</h3>
-          <p>For your privacy</p>
+        <a href="">&times;</a>
+      </div>
+
+      <div class="user-info">
+        <table>
+          <tr>
+            <th>Name :</th>
+            <td>Sivaraman </td>
+          </tr>
+
+          <tr>
+            <th>Mobile :</th>
+            <td>123456789 </td>
+          </tr>
+
+          <tr>
+            <th>Address :</th>
+            <td>123 djhkfhdkf kjdhfkj dhkh </td>
+          </tr>
+
+          <tr>
+            <th>Pincode :</th>
+            <td>788787 </td>
+          </tr>
+
+          <tr>
+            <th>Total Spent :</th>
+            <td>123456789 </td>
+          </tr>
+
+          <tr>
+            <th>Your Order :</th>
+            <td><span><a href="">View</a></span></td>
+          </tr>
+
+          <tr>
+            <th>Your Transactions :</th>
+            <td><span><a href="">View</a></span></td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="update-info-btn op-btn">
+        <button>Update Info</button>
+      </div> -->
+
+      <div class="not-logged-in">
+        <a href="">&times;</a>
+        <h2 style="color: green;">You haven't logged in yet</h2>
+        <div class="log-btns">
+          <a href="">SignUp</a>
+          <a href="">Login</a>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="categories">
-      <div class="container">
-        <div class="coloumn">
-          <img src="images/category-img/cat-img1.jpg" alt="" srcset="" />
-        </div>
-        <div class="coloumn">
-          <img src="images/category-img/cat-img1.jpg" alt="" srcset="" />
-        </div>
-        <div class="coloumn">
-          <img src="images/category-img/cat-img1.jpg" alt="" srcset="" />
-        </div>
-        <div class="coloumn">
-          <img src="images/category-img/cat-img1.jpg" alt="" srcset="" />
-        </div>
-      </div>
-    </div>
-
-    <section class="section-slider">
-      <h2>New Arrivals on Our Bookshelf</h2>
-      <div class="container">
-        <ul class="responsive">
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-follow-btns footer-item">
+        <h3>Follow us</h3>
+        <ul>
           <li>
-            <div class="slide-item">
-              <div class="item-img-sec">
-                <img src="./images/books/book.jpg" alt="" srcset="" />
-              </div>
-              <div class="item-details">
-                <div class="title">
-                  <a href="">Title Book Name</a>
-                  <span>Author name</span>
-                </div>
-
-                <h4 class="item-price">$ 124</h4>
-              </div>
-            </div>
+            <i class="fa fa-facebook"></i>
           </li>
           <li>
-            <div class="slide-item">
-              <div class="item-img-sec">
-                <img src="./images/books/book.jpg" alt="" srcset="" />
-              </div>
-              <div class="item-details">
-                <div class="title">
-                  <a href="">Title Book Name</a>
-                  <span>Author name</span>
-                </div>
-
-                <h4 class="item-price">$ 124</h4>
-              </div>
-            </div>
+            <i class="fa fa-instagram"></i>
           </li>
           <li>
-            <div class="slide-item">
-              <div class="item-img-sec">
-                <img src="./images/books/book.jpg" alt="" srcset="" />
-              </div>
-              <div class="item-details">
-                <div class="title">
-                  <a href="">Title Book Name</a>
-                  <span>Author name</span>
-                </div>
-
-                <h4 class="item-price">$ 124</h4>
-              </div>
-            </div>
+            <i class="fa fa-twitter"></i>
           </li>
           <li>
-            <div class="slide-item">
-              <div class="item-img-sec">
-                <img src="./images/books/book.jpg" alt="" srcset="" />
-              </div>
-              <div class="item-details">
-                <div class="title">
-                  <a href="">Title Book Name</a>
-                  <span>Author name</span>
-                </div>
-
-                <h4 class="item-price">$ 124</h4>
-              </div>
-            </div>
+            <i class="fa fa-youtube"></i>
           </li>
           <li>
-            <div class="slide-item">
-              <div class="item-img-sec">
-                <img src="./images/books/book.jpg" alt="" srcset="" />
-              </div>
-              <div class="item-details">
-                <div class="title">
-                  <a href="">Title Book Name</a>
-                  <span>Author name</span>
-                </div>
-
-                <h4 class="item-price">$ 124</h4>
-              </div>
-            </div>
+            <i class="fa fa-linkedin"></i>
           </li>
           <li>
-            <div class="slide-item">
-              <div class="item-img-sec">
-                <img src="./images/books/book.jpg" alt="" srcset="" />
-              </div>
-              <div class="item-details">
-                <div class="title">
-                  <a href="">Title Book Name</a>
-                  <span>Author name</span>
-                </div>
-
-                <h4 class="item-price">$ 124</h4>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="slide-item">
-              <div class="item-img-sec">
-                <img src="./images/books/book.jpg" alt="" srcset="" />
-              </div>
-              <div class="item-details">
-                <div class="title">
-                  <a href="">Title Book Name</a>
-                  <span>Author name</span>
-                </div>
-
-                <h4 class="item-price">$ 124</h4>
-              </div>
-            </div>
-          </li>
-
-          <li>
-            <div class="slide-item">
-              <div class="item-img-sec">
-                <img src="./images/books/book.jpg" alt="" srcset="" />
-              </div>
-              <div class="item-details">
-                <div class="title">
-                  <a href="">Title Book Name</a>
-                  <span>Author name</span>
-                </div>
-
-                <h4 class="item-price">$ 124</h4>
-              </div>
-            </div>
-          </li>
-
-          <li>
-            <div class="slide-item">
-              <div class="item-img-sec">
-                <img src="./images/books/book.jpg" alt="" srcset="" />
-              </div>
-              <div class="item-details">
-                <div class="title">
-                  <a href="">Title Book Name</a>
-                  <span>Author name</span>
-                </div>
-
-                <h4 class="item-price">$ 124</h4>
-              </div>
-            </div>
+            <i class="fa fa-pinterest"></i>
           </li>
         </ul>
       </div>
-    </section>
 
-    <div class="categories">
-      <div class="container">
-        <div class="coloumn">
-          <img src="images/category-img/cat-img1.jpg" alt="" srcset="" />
-        </div>
-        <div class="coloumn">
-          <img src="images/category-img/cat-img1.jpg" alt="" srcset="" />
-        </div>
-        <div class="coloumn">
-          <img src="images/category-img/cat-img1.jpg" alt="" srcset="" />
-        </div>
-        <div class="coloumn">
-          <img src="images/category-img/cat-img1.jpg" alt="" srcset="" />
-        </div>
+      <div class="footer-item">
+        <h3>Information</h3>
+        <ul>
+          <li><a href="">Terms & Conditions</a></li>
+          <li><a href="">Privacy Policy</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Contact Us</a></li>
+          <li><a href="">Terms of service</a></li>
+          <li><a href="">Authors and Publishers</a></li>
+          <li><a href="">Shipping & Delivery Policy</a></li>
+          <li><a href="">Replacement, Return, Cancellation & Refund Policy</a></li>
+          <li><a href="">Refund policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-item">
+        <h3>Popular Categories</h3>
+        <ul>
+          <li><a href="">Action & Adventure</a></li>
+          <li><a href="">Biographies & True Accounts</a></li>
+          <li><a href="">Business, Economics & Investing</a></li>
+          <li><a href="">Crime, Thriller & Mystery</a></li>
+          <li><a href="">Class 12th</a></li>
+          <li><a href="">Class 10th</a></li>
+          <li><a href="">Young Adult</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-item">
+        <h3>Contact Us</h3>
+        <ul>
+          <p>Dewas - Indore, Madhya Pradesh</p>
+        </ul>
+        <h3>Customer Support</h3>
+        <ul>
+          <p>4831/24, </p>
+        </ul>
       </div>
     </div>
 
-    <section class="section-slider">
-      <h2>New Arrivals on Our Bookshelf</h2>
-      <div class="container">
-        <ul class="responsive">
-          <li>
-            <div class="slide-item">
-              <div class="item-img-sec">
-                <img src="./images/books/book.jpg" alt="" srcset="" />
-              </div>
-              <div class="item-details">
-                <div class="title">
-                  <a href="">Title Book Name</a>
-                  <span>Author name</span>
-                </div>
+    <p class="footer-cr">Copyright © 2022 Booklers.<span> Designed and developed by <a href="">Yashank Maski</a></span>
+    </p>
+  </footer>
 
+<<<<<<< HEAD
                 <h4 class="item-price">$ 124</h4>
               </div>
             </div>
@@ -724,35 +1270,67 @@
                 slideMove: 1,
                 slideMargin: 6,
               },
+=======
+  <script>
+    $(document).ready(function () {
+      $(".responsive").lightSlider({
+        item: 5,
+        loop: false,
+        slideMove: 2,
+        easing: "cubic-bezier(0.25, 0, 0.25, 1)",
+        speed: 600,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              item: 4,
+              slideMove: 1,
+              slideMargin: 6,
+>>>>>>> 925cc00 (new changes)
             },
-            {
-              breakpoint: 800,
-              settings: {
-                item: 3,
-                slideMove: 1,
-                slideMargin: 6,
-              },
+          },
+          {
+            breakpoint: 800,
+            settings: {
+              item: 3,
+              slideMove: 1,
+              slideMargin: 6,
             },
-            {
-              breakpoint: 666,
-              settings: {
-                item: 2,
-                slideMove: 1,
-                slideMargin: 6,
-              },
+          },
+          {
+            breakpoint: 666,
+            settings: {
+              item: 2,
+              slideMove: 1,
+              slideMargin: 6,
             },
-            {
-              breakpoint: 480,
-              settings: {
-                item: 1,
-                slideMove: 1,
-              },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              item: 1,
+              slideMove: 1,
             },
-          ],
-        });
+          },
+        ],
       });
-    </script>
+    });
+  </script>
 
-    <!-- <script src="js/style.js"></script> -->
-  </body>
+  <script>
+    const btn = document.querySelector('.sidebar-opener');
+    const sideMenu = document.querySelector('.side-menu');
+    const closeBtn = document.querySelector('.close-btn');
+
+    btn.addEventListener('click', () => {
+      sideMenu.style.display = 'block';
+    });
+    closeBtn.addEventListener('click', () => {
+      sideMenu.style.display = 'none';
+    });
+  </script>
+
+  <!-- <script src="js/style.js"></script> -->
+</body>
+
 </html>

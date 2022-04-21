@@ -375,3 +375,231 @@ ul {
 .section-slider .item-price {
   color: red;
 }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 100;
+  /* display: none; */
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  top: 15%;
+  margin: 0px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 34%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup-top {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 20px; */
+  align-items: center;
+}
+
+.popup-top a {
+  font-size: 50px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 15px auto;
+  border: 1px solid whitesmoke;
+}
+.cart-item img {
+  width: 12%;
+  margin-right: 10px;
+}
+
+.item-det {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+#popup-myaccount .popup {
+  width: 40%;
+}
+
+.pop-head {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pop-head a {
+  font-size: 40px;
+}
+
+.user-img-name {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.user-img-name img {
+  width: 10%;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.user-det {
+  display: flex;
+  flex-direction: column;
+}
+
+table {
+  /* border: 1px solid red; */
+  width: 100%;
+  margin: 12px 0;
+}
+
+table tr {
+  width: 100%;
+  float: left;
+}
+
+.user-info th {
+  /* width: 20%; */
+  text-align: right;
+  padding: 6px;
+}
+
+.user-info td {
+  text-align: left;
+  padding: 6px;
+}
+
+.user-info td a {
+  font-size: 14px;
+  color: blue;
+  font-weight: 700;
+}
+
+.side-menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(167, 167, 167);
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+  color: #fff;
+  /* top: 125px; */
+  /* display: none; */
+  display: none;
+}
+
+.side-menu .side-menu-in {
+  background-color: black;
+  width: 70%;
+  height: 100%;
+  position: fixed;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  align-items: flex-start;
+}
+
+.side-menu h1 {
+  font-size: 40px;
+}
+
+.logo-sm .nav-menu {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.side-menu .nav-menu a {
+  color: #fff;
+  padding: 20px 0;
+  cursor: pointer;
+}
+
+.popOpenBtn {
+  cursor: pointer;
+}
+
+.op-btn {
+  text-align: right;
+}
+
+.op-btn button {
+  padding: 6px;
+  background-color: rgb(61, 61, 240);
+  color: white;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.total-amt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total-amt p {
+  margin-right: 25px;
+  color: red;
+  font-weight: 700;
+}
+
+.cart-btns button {
+  margin: 10px 0;
+  padding: 10px 20px;
+}
+
+.not-logged-in {
+  display: flex;
+  flex-direction: column;
+}
+
+.not-logged-in a {
+  align-self: flex-end;
+  text-align: right;
+  font-size: 40px;
+}
+
+.not-logged-in h2 {
+  align-self: center;
+}
+
+.log-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.log-btns a {
+  font-size: 14px;
+  background-color: rgb(36, 36, 202);
+  color: white;
+  padding: 10px 14px;
+  margin: 10px;
+  border-radius: 10px;
+}
